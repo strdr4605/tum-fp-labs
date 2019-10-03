@@ -1,0 +1,20 @@
+{
+  "name": "tum-fp-labs",
+  "version": "0.1.0",
+  "sources": {
+    "dir": "src",
+    "subdirs": true
+  },
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": false
+  },
+  "suffix": ".bs.js",
+  "bs-dependencies": [],
+  "warnings": {
+    "number": "+A-48-42-40-4",
+    "error": "+A-3-44-102-40-4"
+  },
+  "namespace": true,
+  "refmt": 3
+}
