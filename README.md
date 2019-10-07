@@ -1,18 +1,28 @@
-# Basic Reason Template
+# TUM Functional Programming labs
 
-Hello! This project allows you to quickly get started with Reason and BuckleScript. If you wanted a more sophisticated version, try the `react` template (`bsb -theme react -init .`).
+Labs were done using [ReasonMl](https://reasonml.github.io/)
 
-# Build
-```
+## Prep
+
+To install and build the project:
+```bash
+npm i
 npm run build
 ```
 
-# Build + Watch
+## Lab1
 
+> Sort a list of integers
+
+For this lab I implemented QuickSort. The code can be seen in `src/QuickSort.re`. After the build you can run:
+
+```bash
+node lib/js/src/QuickSort.bs.js 1,3,9,0,6
 ```
-npm run start
-```
 
+Where the last argument are the numbers **separeted by `,`**
 
-# Editor
-If you use `vscode`, Press `Windows + Shift + B` it will build automatically
+### Examples
+
+![image](https://user-images.githubusercontent.com/16056918/66345356-96541f00-e958-11e9-920e-b840982d845b.png)
+![image](https://user-images.githubusercontent.com/16056918/66345412-b4218400-e958-11e9-8c83-ec2763cf72a2.png)
