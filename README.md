@@ -1,6 +1,6 @@
 # TUM Functional Programming labs
 
-Labs were done using [ReasonMl](https://reasonml.github.io/)
+Labs were done using [ReasonML](https://reasonml.github.io/)
 
 ## Prep
 
@@ -14,7 +14,7 @@ npm run build
 
 > Sort a list of integers
 
-For this lab I implemented QuickSort. The code can be seen in `src/QuickSort.re`. After the build you can run:
+For this lab I implemented QuickSort. The code can be seen in [`src/QuickSort.re`](https://github.com/strdr4605/tum-fp-labs/blob/master/src/QuickSort.re). After the build you can run:
 
 ```bash
 node lib/js/src/QuickSort.bs.js 1,3,9,0,6
