@@ -2,7 +2,12 @@
 
 Labs were done using [ReasonML](https://reasonml.github.io/)
 
-## Prep
+## Table of contents
+* [Preparation](#preparation)
+* [Lab1](#lab1)
+* [Lab2](#lab2)
+
+## Preparation
 
 To install and build the project:
 
