@@ -16,6 +16,12 @@ npm i
 npm run build
 ```
 
+## Table of contents
+
+- [Lab1](#lab1)
+- [Lab2](#lab2)
+- [Lab3](#lab3)
+
 ## Lab1
 
 > Sort a list of integers
@@ -62,3 +68,15 @@ node lib/js/src/Subsets.bs.js 1,3,-16,5,7,8,2,2 12
 ![image](https://user-images.githubusercontent.com/16056918/66722711-dc5a2880-ee19-11e9-9fbf-086b55cc8d8d.png)
 ![image](https://user-images.githubusercontent.com/16056918/66722705-d2382a00-ee19-11e9-8dc9-e40cf4bb4a58.png)
 ![image](https://user-images.githubusercontent.com/16056918/66722699-c5b3d180-ee19-11e9-9afc-aa5c6a08a66c.png)
+
+
+
+## Lab3
+
+> Eliminate left recursion from a Formal grammar
+
+### Lab3 Examples
+
+![image](https://user-images.githubusercontent.com/16056918/68163591-8a617a00-ff63-11e9-9616-fd6421a4ab6f.png)
+![image](https://user-images.githubusercontent.com/16056918/68163583-846b9900-ff63-11e9-8231-f11358902371.png)
+
