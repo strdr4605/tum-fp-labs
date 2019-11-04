@@ -18,13 +18,13 @@ npm run build
 
 ## Table of contents
 
-- [Lab1](#lab1)
-- [Lab2](#lab2)
-- [Lab3](#lab3)
+- [Lab1 - QuickSort](#lab1)
+- [Lab2 - Subsets](#lab2)
+- [Lab3 - RemoveLeftRecursion](#lab3)
 
 ## Lab1
 
-> Sort a list of integers
+> Sort a list of integers.
 
 For this lab I implemented QuickSort. The code can be seen in [`src/QuickSort.re`](https://github.com/strdr4605/tum-fp-labs/blob/master/src/QuickSort.re). After the build you can run:
 
@@ -70,10 +70,18 @@ node lib/js/src/Subsets.bs.js 1,3,-16,5,7,8,2,2 12
 ![image](https://user-images.githubusercontent.com/16056918/66722699-c5b3d180-ee19-11e9-9afc-aa5c6a08a66c.png)
 
 
-
 ## Lab3
 
-> Eliminate left recursion from a Formal grammar
+> Eliminate left recursion from a Formal grammar.
+
+Explanation on how to eliminate left recursion can be seen [here.](https://www.youtube.com/watch?v=3_VCoBfrt9c).
+The steps behind the logic in [`src/RemoveLeftRecursion.re`](https://github.com/strdr4605/tum-fp-labs/blob/master/src/RemoveLeftRecursion.re) are:
+
+1. Devide grammar rules in **left recursion** and **no left recursion**
+2. For **no left recursion** rules add _primes_ if there is a **left recursion** associated with current **Nonterminal**
+2. For **no left recursion** rules add _primes_ with _**right recursion**_ if there is a **left recursion** associated with current **Nonterminal**
+3. Add rules with _primes_ to **terminal**
+
 
 ### Lab3 Examples
 
