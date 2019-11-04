@@ -1,1 +1,1 @@
-let getArrayFromString = arrayAsString => arrayAsString |> Js.String.split(",") |> Array.map(int_of_string);
+let getArrayFromString = (arrayAsString, fn) => arrayAsString |> Js.String.split(",") |> Array.map(fn);
