@@ -1,6 +1,6 @@
 let arrayArgAsString = Node.Process.argv[2];
 let desiredSum = int_of_string(Node.Process.argv[3]);
-let actualArray = LabsUtils.getArrayFromString(arrayArgAsString);
+let actualArray = LabsUtils.getArrayFromString(arrayArgAsString, int_of_string);
 
 // returns subsets of specific length for an array
 let rec getSubsets = (listOfSubsets, arr, start, len, arrayLength) => {

@@ -1,5 +1,5 @@
 let arrayArgAsString = Node.Process.argv[2];
-let actualArray = LabsUtils.getArrayFromString(arrayArgAsString);
+let actualArray = LabsUtils.getArrayFromString(arrayArgAsString, int_of_string);
 
 let rec listFilter = (fn, l) => {
   switch l {
