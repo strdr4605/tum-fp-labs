@@ -1,5 +1,7 @@
 let primeSufix = "1";
 let argsList = Array.to_list(Node.Process.argv);
+
+// First I get grammar from command arguments in this format: A,Ab A,c
 let grammar = switch argsList {
   | [_, _, ...grammar] => grammar |> Array.of_list
   | _ => { Js.log("Error, never reach here!"); Node.Process.exit(1); [|""|] };
@@ -12,6 +14,7 @@ let getNonTerminalOrExit = char => {
   char;
 }
 
+// Convert each string arg to tuple (nonterminal, expression)
 let tupleFromString = rule => {
   let arr = LabsUtils.getArrayFromString(rule, e => e);
   switch arr {
@@ -53,15 +56,16 @@ let showPrettyGrammarRule = ruleTuple => {
   nonterminal ++ "->" ++ expresion;
 }
 
+let prettyLog = tuples => tuples |> Array.of_list |> Array.map(showPrettyGrammarRule) |> Array.iter(Js.log);
 
 Js.log("Initial left recursion");
 Js.log("========================");
-leftRecursionTuples |> Array.of_list |> Array.map(showPrettyGrammarRule) |> Array.iter(Js.log);
-noLeftRecursionTuples |> Array.of_list |> Array.map(showPrettyGrammarRule) |> Array.iter(Js.log);
+prettyLog(leftRecursionTuples);
+prettyLog(noLeftRecursionTuples);
 Js.log("========================");
 Js.log("");
 Js.log("Right recursion");
 Js.log("========================");
-terminalAndPrimeTuples |> Array.of_list |> Array.map(showPrettyGrammarRule) |> Array.iter(Js.log);
-primesToTerminalAndPrimesTuples |> Array.of_list |> Array.map(showPrettyGrammarRule) |> Array.iter(Js.log);
-primesToTerminalTuples |> Array.of_list |> Array.map(showPrettyGrammarRule) |> Array.iter(Js.log);
+prettyLog(terminalAndPrimeTuples);
+prettyLog(primesToTerminalAndPrimesTuples);
+prettyLog(primesToTerminalTuples);
