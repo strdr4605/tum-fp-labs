@@ -3,9 +3,10 @@
 Labs were done using [ReasonML](https://reasonml.github.io/)
 
 ## Table of contents
-* [Preparation](#preparation)
-* [Lab1](#lab1)
-* [Lab2](#lab2)
+- [Preparation](#preparation)
+- [Lab1 - QuickSort](#lab1)
+- [Lab2 - Subsets](#lab2)
+- [Lab3 - RemoveLeftRecursion](#lab3)
 
 ## Preparation
 
@@ -15,12 +16,6 @@ To install and build the project:
 npm i
 npm run build
 ```
-
-## Table of contents
-
-- [Lab1 - QuickSort](#lab1)
-- [Lab2 - Subsets](#lab2)
-- [Lab3 - RemoveLeftRecursion](#lab3)
 
 ## Lab1
 
